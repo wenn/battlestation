@@ -9,3 +9,4 @@
 - import_tasks: tmux.yml
 - import_tasks: iterm2.yml
 
+- import_tasks: git.conf.yml

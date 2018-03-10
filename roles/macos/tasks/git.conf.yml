@@ -1,0 +1,17 @@
+---
+- name: Include dotfiles variables.
+  include_vars:
+    file: dotfiles.yml
+
+- name: Have a .gitconfig?
+  stat:
+    path: "{{ dotfiles_gitconfig }}"
+  register: gitconfig
+
+- name: Link .gitconfig
+  file:
+    src: "{{ dotfiles_gitconfig }}"
+    dest: ~/.gitconfig
+    state: link
+  when: gitconfig.stat.exists
+
