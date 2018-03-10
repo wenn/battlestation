@@ -6,7 +6,7 @@ Credit to [Josheph Kahn's blog][josephkahn].
 Setup a macos machine.
 
 #### Setup
-1. remote `bash <(curl -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/scripts/macos_run.sh)`
+1. remote `bash <(curl -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
 2. local `./setup/macos_run.sh`
 
 #### Supports
