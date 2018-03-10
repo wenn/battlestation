@@ -55,7 +55,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 | --- | :--- |
 | [git] | A global _.gitconfig_  will be linked to your `dotfiles`' _.gitconfig_ |
 | [vim] | A global _.vimrc_  will be linked to your `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
-| [bash] | Links _.bashrc_ and _.bash_profile_ from your `dotfiles` repo.|
+| [bash] | Links _.bashrc_ and _.bash\_profile_ from your `dotfiles` repo.|
 
 ---
 
