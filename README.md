@@ -26,8 +26,8 @@ Different ways to setup.
 | iterm2 | latest | yes |
 
 
-#### Disable an installation
-`main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all installations, simply comment a task to disable the installation.
+#### Disable a modu module
+`main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the modules.
 
 
 
