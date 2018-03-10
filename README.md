@@ -10,7 +10,8 @@ Setup your macos machine with ansible.
 1. [homebrew][brew]
 
 #### Setup
-`./macos_run.sh`
+1. remote `bash <(curl -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/scripts/macos_run.sh)`
+2. local `./macos_run.sh`
 
 #### Supports
 
