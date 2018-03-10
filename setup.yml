@@ -7,8 +7,10 @@
   vars_prompt:
     - name: "world_dir"
       prompt: "[ optional ] Where do you want to organize your projects?"
+      private: no
       default: "~/world"
     - name: "dotfiles_repo"
       prompt: "[ optional ] What is your dotfiles https git uri"
+      private: no
 
 

@@ -1,8 +1,9 @@
 ---
-- name: Configure dotfiles?
-  git:
-    rep: "{{ dotfiles_repo }}"
-    dest: "{{ dotfiles_dir }}"
-    clone: no
-    update: no
-  when: dotfiles_repo
+- block:
+    - name: Clone dotfiles repo
+      git:
+        repo: "{{ dotfiles_repo }}"
+        dest: "{{ dotfiles_dir }}"
+        clone: no
+        update: no
+  when: dotfiles_repo != ""

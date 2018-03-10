@@ -6,8 +6,11 @@ Credit to [Josheph Kahn's blog][josephkahn].
 Setup a macos machine.
 
 #### Setup
-1. remote `bash <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
-2. local `./setup/macos_run.sh`
+Different ways to setup.
+
+- remotely `bash <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
+- locally `./setup/macos_run.sh`
+- just run the playbook `ansible-playbook -i HOSTS setup.yml`
 
 #### Supports
 
