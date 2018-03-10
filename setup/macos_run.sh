@@ -20,12 +20,8 @@ function ensure_git {
 
 function ensure_battlestation {
   local battlestation_repo=https://github.com/wenn/battlestation.git
-
-  if [ -d "$battlestation_path" ]; then
-    echo ">> $battlestation_path already downloaded."
-  else
-    git clone $battlestation_repo $battlestation_path
-  fi
+  rm -rf $battlestation_path
+  git clone $battlestation_repo $battlestation_path
 }
 
 function ensure_python2 {
