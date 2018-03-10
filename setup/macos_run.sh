@@ -20,6 +20,7 @@ function ensure_git {
 
 function ensure_battlestation {
   local battlestation_repo=https://github.com/wenn/battlestation.git
+
   rm -rf $battlestation_path
   git clone $battlestation_repo $battlestation_path
 }

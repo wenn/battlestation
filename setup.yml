@@ -6,8 +6,8 @@
     - macos
   vars_prompt:
     - name: "world_dir"
-      prompt: "[ optional ] Where do you want to organize your projects? defaults to '~/world/'"
-      default: "/home/world"
+      prompt: "[ optional ] Where do you want to organize your projects?"
+      default: "~/world"
     - name: "dotfiles_repo"
       prompt: "[ optional ] What is your dotfiles https git uri"
 
