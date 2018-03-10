@@ -6,6 +6,22 @@ function ensure_the_world {
     mkdir -p $world_path
 }
 
+function ensure_brew {
+  if brew --version > /dev/null 2>&1; then
+    echo ">>> brew already installed @ version $(brew --version)."
+  else
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+}
+
+function ensure_git {
+  if git --version > /dev/null 2>&1; then
+    echo ">>> git already installed @ version $(git --version) "
+  else
+    brew install git && brew link git
+  fi
+}
+
 function ensure_battlestation {
   local battlestation_path=$world_path/battlestation
   local battlestation_repo=https://github.com/wenn/battlestation.git
@@ -13,7 +29,6 @@ function ensure_battlestation {
   if [ -d "$battlestation_path" ]; then
     echo ">>> $battlestation_path already downloaded."
   else
-    brew install git && brew link git
     git clone $battlestation_repo $battlestation_path
   fi
 }
@@ -43,6 +58,8 @@ function ensure_ansible {
 }
 
 ensure_the_world
+ensure_brew
+ensure_git
 ensure_battlestation
 ensure_python2
 ensure_ansible

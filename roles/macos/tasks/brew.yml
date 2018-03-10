@@ -1,5 +1,0 @@
----
-- name: Installing homebrew
-  homebrew:
-    name: wget
-    state: latest
