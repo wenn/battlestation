@@ -14,15 +14,15 @@ Setup a macos machine.
 
 #### Supports
 
-| Installation | Version | Can be disabled? |
-| --- |---:|---:|
-| ~/world | n/a | no |
-| python | 2.7 | no |
-| ansible | 2.4.3.0 | no |
-| git | latest | no |
-| chrome | latest | yes |
-| vim | latest | yes |
-| tmux | latest | yes |
+| Installation | Version | Can be disabled? | Can be configured? |
+| --- |---:|---:|---:|
+| ~/world | n/a | no | todo |
+| python | 2.7 | no | todo |
+| ansible | 2.4.3.0 | no | todo |
+| git | latest | no | todo |
+| chrome | latest | yes | todo |
+| vim | latest | yes | todo |
+| tmux | latest | yes | todo |
 
 ---
 
