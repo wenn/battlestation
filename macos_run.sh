@@ -6,15 +6,15 @@ function ensure_the_world {
     mkdir -p $world_path
 }
 
-function ensure_dotfiles {
-  local dotfiles_path=$world_path/dotfiles
-  local dotfiles_repo=https://nnguyen920@bitbucket.org/nnguyen920/dotfiles.git
+function ensure_battlestation {
+  local battlestation_path=$world_path/battlestation
+  local battlestation_repo=https://github.com/wenn/battlestation.git
 
-  if [ -d "$dotfiles_path" ]; then
-    echo ">>> $dotfiles_path already downloaded."
+  if [ -d "$battlestation_path" ]; then
+    echo ">>> $battlestation_path already downloaded."
   else
     brew install git && brew link git
-    git clone $dotfiles_repo $dotfiles_path
+    git clone $battlestation_repo $battlestation_path
   fi
 }
 
@@ -43,7 +43,7 @@ function ensure_ansible {
 }
 
 ensure_the_world
-ensure_dotfiles
+ensure_battlestation
 ensure_python2
 ensure_ansible
 
