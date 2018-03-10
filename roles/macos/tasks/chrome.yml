@@ -1,5 +1,4 @@
 ---
-
 - name: Is chrome installed?
   stat:
     path: "{{ applications_dir }}/Google\ Chrome.app"

@@ -21,6 +21,7 @@ Setup a macos machine.
 | chrome | latest | yes | todo |
 | vim | latest | yes | todo |
 | tmux | latest | yes | todo |
+| iterm2 | latest | yes | todo |
 
 
 #### Disable an installation
