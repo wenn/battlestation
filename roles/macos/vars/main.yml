@@ -1,4 +1,4 @@
 ---
 
-applications_dir: /Applications/
-github_username: wenn
+applications_dir: /Applications
+dotfiles_dir: "{{ world_dir }}/dotfiles"

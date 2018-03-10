@@ -1,10 +1,6 @@
 #! /usr/bin/env bash
 
-world_path=$HOME/world
-
-function ensure_the_world {
-    mkdir -p $world_path
-}
+battlestation_path=/tmp/battlestation
 
 function ensure_brew {
   if brew --version > /dev/null 2>&1; then
@@ -23,7 +19,6 @@ function ensure_git {
 }
 
 function ensure_battlestation {
-  local battlestation_path=$world_path/battlestation
   local battlestation_repo=https://github.com/wenn/battlestation.git
 
   if [ -d "$battlestation_path" ]; then
@@ -57,11 +52,15 @@ function ensure_ansible {
   fi
 }
 
-ensure_the_world
+function run_playbook {
+  cd $battlestation_path
+  ansible-playbook -i HOSTS setup.yml
+}
+
 ensure_brew
 ensure_git
 ensure_battlestation
 ensure_python2
 ensure_ansible
 
-ansible-playbook -i HOSTS setup.yml
+run_playbook
