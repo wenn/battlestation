@@ -1,10 +1,9 @@
 # Battlestation
-Setup a fresh work machine with [ansible][ansible].
-
-[Credit to Josheph Kahn's blog][josephkahn].
+Setup a machine with [ansible][ansible].
+Credit to [Josheph Kahn's blog][josephkahn].
 
 ## Macos
-Setup your macos machine with ansible.
+Setup a macos machine.
 
 #### Requirements
 1. [homebrew][brew]
