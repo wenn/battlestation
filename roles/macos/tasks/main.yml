@@ -1,0 +1,6 @@
+---
+- import_tasks: brew.yml
+- import_tasks: chrome.yml
+- import_tasks: git.yml
+- import_tasks: vim.yml
+- import_tasks: tmux.yml

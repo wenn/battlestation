@@ -1,0 +1,6 @@
+---
+- name: Installing vim
+  homebrew:
+    options: -with-override-system-vi
+    name: vim
+    state: latest

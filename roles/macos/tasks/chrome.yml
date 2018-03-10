@@ -1,0 +1,13 @@
+---
+
+- name: Is chrome installed?
+  stat:
+    path: "{{ applications_dir }}/Google\ Chrome.app"
+  register: chrome
+
+- block:
+    - name: Installing google chrome
+      homebrew_cask:
+        name: google-chrome
+        state: present
+  when: not chrome.stat.exists

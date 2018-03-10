@@ -1,0 +1,8 @@
+---
+- name: wen's mac os setup
+  hosts: local
+  connection: local
+  roles:
+    - macos
+
+
