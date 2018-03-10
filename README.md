@@ -17,9 +17,9 @@ Setup a macos machine.
 | Installation | Version | Can be disabled? |
 | --- |---:|---:|
 | ~/world | n/a | no |
-| git | latest | no |
 | python | 2.7 | no |
 | ansible | 2.4.3.0 | no |
+| git | latest | no |
 | chrome | latest | yes |
 | vim | latest | yes |
 | tmux | latest | yes |
