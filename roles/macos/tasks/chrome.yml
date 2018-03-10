@@ -5,7 +5,7 @@
   register: chrome
 
 - block:
-    - name: Installing google chrome
+    - name: Install google chrome
       homebrew_cask:
         name: google-chrome
         state: present

@@ -1,3 +1,4 @@
 ---
 dotfiles_dir: "{{ world_dir }}/dotfiles"
 dotfiles_gitconfig: "{{ dotfiles_dir }}/.gitconfig"
+dotfiles_vimrc: "{{ dotfiles_dir }}/.vimrc"

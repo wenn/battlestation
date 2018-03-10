@@ -4,7 +4,7 @@
     path: "{{ applications_dir }}/iTerm.app"
   register: iterm2
 
-- name: Installing iterm2
+- name: Install iterm2
   homebrew_cask:
     name: iterm2
     state: present
