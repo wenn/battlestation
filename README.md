@@ -27,7 +27,7 @@ Different ways to setup.
 
 
 #### Disable a modu module
-`main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the modules.
+`main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the module.
 
 
 
