@@ -26,7 +26,7 @@ Different ways to setup.
 | iterm2 | latest | yes |
 
 
-#### Disable a modu module
+#### Disable a module
 `main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the module.
 
 
