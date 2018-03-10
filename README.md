@@ -34,9 +34,9 @@ Different ways to setup.
 ## Configure a module
 Configuration is managed via a [dotfiles](#what-is-a-dotfiles) git repo.
 Configuration files are required to live at the top level of the `dotfiles` project.
-To enable configuration, allow [setup]( #setup ) to know the _https uri_ repo location of your `dotfiles`.
+To enable configuration, allow [setup]( #setup ) to know the repo's _https uri_ of the `dotfiles`.
 
-#### What is a dotfiles
+#### What is a dotfiles?
 A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc`.
 
 #### Example
