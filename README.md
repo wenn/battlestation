@@ -69,12 +69,12 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 
 | Module | How is it managed? |
 | --- | :--- |
-| [git] | A global _.gitconfig_  will be linked from the `dotfiles`' _.gitconfig_ |
-| [vim] | A global _.vimrc_  will be linked from the `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
-| [bash] | Links _.bashrc_ and *.bash\_profile* from `dotfiles` repo.|
-| [ideavim] | A global _.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
-| [screen] | A global _.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
-| [tmux] | A global _.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.|
+| [git] |  _~/.gitconfig_  will be linked from the `dotfiles`' _.gitconfig_ |
+| [vim] |  _~/.vimrc_  will be linked from the `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
+| [bash] | Links _~/.bashrc_ and *~/.bash\_profile* from `dotfiles` repo.|
+| [ideavim] |  _~/.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
+| [screen] |  _~/.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
+| [tmux] |  _~/.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.|
 
 
 ## TODO
