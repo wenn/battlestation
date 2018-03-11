@@ -20,17 +20,17 @@ Setup a macos machine.
 
 #### Supports
 
-| Module | Version | Can be disabled? |
-| --- |---:|---:|
-| [homebrew] | latest | no |
-| [python] | 2.7 | no |
-| [ansible] | 2.4.3.0 | no |
-| [git] | latest | no |
-| [chrome] | latest | yes |
-| [vim] | latest | yes |
-| [tmux] | latest | yes |
-| [iterm2] | latest | yes |
-| [shiftit] | latest | yes |
+| Module | Version | Required | Enabled |
+| --- |---:|---:|---:|
+| [homebrew] | latest | yes | yes |
+| [python] | 2.7 | yes | yes |
+| [ansible] | 2.4.3.0 | yes | yes |
+| [git] | latest | yes | yes |
+| [chrome] | latest |  | yes |
+| [vim] | latest |  | yes |
+| [tmux] | latest |  | yes |
+| [iterm2] | latest |  | yes |
+| [shiftit] | latest |  | yes |
 
 
 #### Disable a module

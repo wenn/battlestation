@@ -1,0 +1,12 @@
+---
+- name: Is firefox installed?
+  stat:
+    path: "{{ applications_dir }}/Firefox.app"
+  register: firefox
+
+- block:
+  - name: Install firefox
+    homebrew_cask:
+      name: firefox
+      state: present
+  when: not firefox.stat.exists
