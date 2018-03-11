@@ -1,28 +1,24 @@
 ---
-- name: Include dotfiles variables.
-  include_vars:
-    file: dotfiles.yml
-
 - name: Have a .bashrc?
   stat:
-    path: "{{ dotfiles_bashrc }}"
+    path: "{{ dotfiles_dir }}/.bashrc"
   register: bashrc
 
 - name: Link .bashrc
   file:
-    src: "{{ dotfiles_bashrc}}"
+    src: "{{ dotfiles_dir }}/.bashrc"
     dest: ~/.bashrc
     state: link
   when: bashrc.stat.exists
 
 - name: Have a .bash_profile?
   stat:
-    path: "{{ dotfiles_bash_profile }}"
+    path: "{{ dotfiles_dir }}/.bash_profile"
   register: bash_profile
 
 - name: Link .bash_profile
   file:
-    src: "{{ dotfiles_bash_profile}}"
+    src: "{{ dotfiles_dir }}/.bash_profile"
     dest: ~/.bash_profile
     state: link
   when: bash_profile.stat.exists

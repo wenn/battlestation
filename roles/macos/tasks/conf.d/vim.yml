@@ -1,16 +1,12 @@
 ---
-- name: Include dotfiles variables.
-  include_vars:
-    file: dotfiles.yml
-
 - name: Have a .vimrc?
   stat:
-    path: "{{ dotfiles_vimrc }}"
+    path: "{{ dotfiles_dir }}/.vimrc"
   register: vimrc
 
 - name: Link .vimrc
   file:
-    src: "{{ dotfiles_vimrc }}"
+    src: "{{ dotfiles_dir }}/.vimrc"
     dest: ~/.vimrc
     state: link
   when: vimrc.stat.exists

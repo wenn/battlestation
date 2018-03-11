@@ -1,9 +1,5 @@
 ---
 - block:
-    - name: Include dotfiles variables.
-      include_vars:
-        file: dotfiles.yml
-
     - name: Clone dotfiles repo
       git:
         repo: "{{ dotfiles_repo }}"

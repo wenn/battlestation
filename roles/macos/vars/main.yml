@@ -1,2 +1,3 @@
 ---
 applications_dir: /Applications
+dotfiles_dir: "{{ world_dir }}/dotfiles"

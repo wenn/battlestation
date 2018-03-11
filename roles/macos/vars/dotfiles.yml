@@ -1,7 +1,0 @@
----
-dotfiles_dir: "{{ world_dir }}/dotfiles"
-dotfiles_gitconfig: "{{ dotfiles_dir }}/.gitconfig"
-dotfiles_vimrc: "{{ dotfiles_dir }}/.vimrc"
-dotfiles_bashrc: "{{ dotfiles_dir }}/.bashrc"
-dotfiles_bash_profile: "{{ dotfiles_dir }}/.bash_profile"
-dotfiles_tmux_conf: "{{ dotfiles_dir }}/.tmux.conf"
