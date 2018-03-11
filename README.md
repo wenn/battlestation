@@ -9,14 +9,22 @@ Credit to [Josheph Kahn's blog][josephkahn].
 ## Macos
 Setup a macos machine.
 
-#### Setup
+#### Quick Setup
+Just run this.
+
 `sh <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
 
-*Make sure there are no newlines in your copy, it will affect [ansible] prompts*
+*Make sure there are no newlines in your copy, it will affect [ansible] prompts*.
+Quick setup will install [battlestation] to */tmp*, and uses the default installations and configurations.
 
-#### Development
-- Run the full setup `./setup/macos_run.sh`
-- Run the playbook `ansible-playbook -i HOSTS setup.yml`
+
+#### Clustom Setup
+Allows you to disable/enable certain modules before running the [ansible] playbook.
+
+1. clone [battlestation]
+2. [modify] your [battlestation]
+3. install required `./setup/macos_run.sh --required-only`
+4. run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
 
 #### Supports
 
@@ -31,9 +39,10 @@ Setup a macos machine.
 | [tmux] | latest |  | yes |
 | [iterm2] | latest |  | yes |
 | [shiftit] | latest |  | yes |
+| [firefox] | latest |  | no |
 
 
-#### Disable a module
+#### Enable/Disable a module
 `main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the module.
 
 
@@ -77,9 +86,11 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 
 ---
 
+[modify]: #enabledisable-a-module
 [dotfiles]: #what-is-a-dotfiles
 [setup]: #setup
 
+[battlestation]: https://github.com/wenn/battlestation
 [josephkahn]: https://blog.josephkahn.io/articles/ansible/
 [ansible]: https://www.ansible.com/
 [vundle]: https://github.com/VundleVim/Vundle.vim
@@ -96,3 +107,4 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 [shiftit]: https://github.com/fikovnik/ShiftIt
 [chef]: https://www.chef.io/
 [puppet]: https://puppet.com/
+[firefox]: https://www.mozilla.org/en-US/firefox/new/

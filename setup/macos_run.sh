@@ -1,6 +1,9 @@
 #! /usr/bin/env sh
 
-battlestation_path=/tmp/battlestation
+required_only=false
+if [[ $1 == "--required-only" ]]; then
+  required_only=true
+fi
 
 function ensure_brew {
   if brew --version > /dev/null 2>&1; then
@@ -16,13 +19,6 @@ function ensure_git {
   else
     brew install git && brew link git
   fi
-}
-
-function ensure_battlestation {
-  local battlestation_repo=https://github.com/wenn/battlestation.git
-
-  rm -rf $battlestation_path
-  git clone $battlestation_repo $battlestation_path
 }
 
 function ensure_python2 {
@@ -49,15 +45,25 @@ function ensure_ansible {
   fi
 }
 
-function run_playbook {
-  cd $battlestation_path
-  ansible-playbook -i HOSTS setup.yml
-}
-
 ensure_brew
 ensure_git
-ensure_battlestation
 ensure_python2
 ensure_ansible
 
-run_playbook
+if [[ $required_only == "false" ]]; then
+  battlestation_path=/tmp/battlestation
+  function ensure_battlestation {
+    local battlestation_repo=https://github.com/wenn/battlestation.git
+
+    rm -rf $battlestation_path
+    git clone $battlestation_repo $battlestation_path
+  }
+
+  function run_playbook {
+    cd $battlestation_path
+    ansible-playbook -i HOSTS setup.yml
+  }
+
+  ensure_battlestation
+  run_playbook
+fi
