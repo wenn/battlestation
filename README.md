@@ -10,7 +10,7 @@ Credit to [Josheph Kahn's blog][josephkahn].
 Setup a macos machine.
 
 #### Setup
-`bash <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
+`sh <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
 
 #### Development
 - Run the full setup `./setup/macos_run.sh`
