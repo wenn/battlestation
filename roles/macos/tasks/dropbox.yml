@@ -1,0 +1,12 @@
+---
+- name: Is dropbox installed?
+  stat:
+    path: "{{ applications_dir }}/Dropbox.app"
+  register: dropbox
+
+- block:
+  - name: Install dropbox
+    homebrew_cask:
+      name: dropbox
+      state: present
+  when: not dropbox.stat.exists

@@ -9,7 +9,8 @@
 - import_tasks: tmux.yml
 - import_tasks: iterm2.yml
 - import_tasks: shiftit.yml
-# - import_tasks: firefox.yml
+- import_tasks: dropbox.yml
+- import_tasks: firefox.yml
 
 - import_tasks: conf.d/git.yml
 - import_tasks: conf.d/vim.yml

@@ -38,7 +38,8 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 | [tmux] | latest |  | yes |
 | [iterm2] | latest |  | yes |
 | [shiftit] | latest |  | yes |
-| [firefox] | latest |  | no |
+| [dropbox] | latest |  | yes |
+| [firefox] | latest |  | yes |
 
 
 #### Enable/Disable a module
@@ -107,3 +108,4 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 [chef]: https://www.chef.io/
 [puppet]: https://puppet.com/
 [firefox]: https://www.mozilla.org/en-US/firefox/new/
+[dropbox]: https://www.dropbox.com/

@@ -1,5 +1,5 @@
 ---
-- name: wen's mac os setup
+- name: Let's get your machine ready!
   hosts: local
   connection: local
   roles:
