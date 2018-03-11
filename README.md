@@ -6,7 +6,7 @@ With [ansible] we're able to set up a new machine automatically, it can take onl
 
 Credit to [Josheph Kahn's blog][josephkahn].
 
-## Macos
+## MacOS
 Setup a macos machine.
 
 #### Quick Setup
