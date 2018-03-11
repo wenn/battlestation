@@ -1,18 +1,20 @@
 # Battlestation
-Setup a develpoment machine with [ansible][ansible].
-Credit to [Josheph Kahn's blog][josephkahn].
+Setting up a new machine? Let [ansible][ansible] do all the work.
+Save hours of managing downloads, installations, configurations and trying to remember where things should be.
 
-Save a few hours and let [ansible] automate bootstrapping your new development machine. Setup instructions are idempotent and repeatable.
+With [ansible] we're able to set up a new machine automatically, it can take only seconds to get your machine ready. [Ansible][ansible] commands are repeatable in an idempotent manner, meaning, it can be ran again to correct issues without having to run previously successful commands.
+
+Credit to [Josheph Kahn's blog][josephkahn].
 
 ## Macos
 Setup a macos machine.
 
 #### Setup
-Different ways to setup.
+`bash <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
 
-- remotely `bash <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
-- locally `./setup/macos_run.sh`
-- just run the playbook `ansible-playbook -i HOSTS setup.yml`
+#### Development
+- Run the full setup `./setup/macos_run.sh`
+- Run the playbook `ansible-playbook -i HOSTS setup.yml`
 
 #### Supports
 
@@ -62,6 +64,15 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 | [ideavim] | A global _.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
 | [screen] | A global _.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
 
+
+## TODO
+
+- add docker
+- add iterm conf
+- add intelliJ
+- add sublime text 2
+- add visual studio
+
 ---
 
 [dotfiles]: #what-is-a-dotfiles
@@ -81,3 +92,5 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 [screen]: https://www.gnu.org/software/screen/
 [ideavim]: https://plugins.jetbrains.com/plugin/164-ideavim
 [shiftit]: https://github.com/fikovnik/ShiftIt
+[chef]: https://www.chef.io/
+[puppet]: https://puppet.com/
