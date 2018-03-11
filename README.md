@@ -1,8 +1,8 @@
 # Battlestation
 Setting up a new machine? Let [ansible][ansible] do all the work.
-Save hours of managing downloads, installations, configurations and trying to remember where things should be.
+Save hours of finding downloads, managing installations, setting up configurations and trying to remember where things should be.
 
-With [ansible] we're able to set up a new machine automatically, it can take only seconds to get your machine ready. [Ansible][ansible] commands are repeatable in an idempotent manner, meaning, it can be ran again to correct issues without having to run previously successful commands.
+With [ansible] we're able to set up a new machine automatically, it can take only minutes to get your machine ready. [Ansible][ansible] commands are repeatable in an idempotent manner, meaning, it can be ran again to correct issues without having to run previously successful commands.
 
 Credit to [Josheph Kahn's blog][josephkahn].
 
@@ -17,8 +17,7 @@ Just run this.
 *Make sure there are no newlines in your copy, it will affect [ansible] prompts*.
 Quick setup will install [battlestation] to */tmp*, and uses the default installations and configurations.
 
-
-#### Clustom Setup
+#### Custom Setup
 Allows you to disable/enable certain modules before running the [ansible] playbook.
 
 1. clone [battlestation]
