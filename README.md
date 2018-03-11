@@ -1,5 +1,5 @@
 # Battlestation
-Setup a machine with [ansible][ansible].
+Setup your develpoment machine with [ansible][ansible].
 Credit to [Josheph Kahn's blog][josephkahn].
 
 ## Macos
@@ -55,7 +55,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 | --- | :--- |
 | [git] | A global _.gitconfig_  will be linked to your `dotfiles`' _.gitconfig_ |
 | [vim] | A global _.vimrc_  will be linked to your `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
-| [bash] | Links _.bashrc_ and _.bash\_profile_ from your `dotfiles` repo.|
+| [bash] | Links _.bashrc_ and *.bash\_profile* from your `dotfiles` repo.|
 
 ---
 
