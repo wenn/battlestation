@@ -47,7 +47,7 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 
 
-## Configure a module
+## Configurable modules
 Configuration is managed via a [dotfiles] git repo.
 Configuration files are required to live at the top level of the `dotfiles` project.
 To enable configuration, allow [setup] to know the repo's _https uri_ of the `dotfiles`.
@@ -74,6 +74,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 | [bash] | Links _.bashrc_ and *.bash\_profile* from `dotfiles` repo.|
 | [ideavim] | A global _.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
 | [screen] | A global _.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
+| [tmux] | A global _.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.|
 
 
 ## TODO
