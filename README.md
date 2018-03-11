@@ -12,6 +12,8 @@ Setup a macos machine.
 #### Setup
 `sh <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
 
+*Make sure there are no newlines in your copy, it will affect [ansible] prompts*
+
 #### Development
 - Run the full setup `./setup/macos_run.sh`
 - Run the playbook `ansible-playbook -i HOSTS setup.yml`
