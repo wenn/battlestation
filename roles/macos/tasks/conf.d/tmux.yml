@@ -1,0 +1,16 @@
+---
+- name: Include dotfiles variables.
+  include_vars:
+    file: dotfiles.yml
+
+- name: Have a .tmux.conf?
+  stat:
+    path: "{{ dotfiles_tmux_conf }}"
+  register: tmux_conf
+
+- name: Link .tmux.conf
+  file:
+    src: "{{ dotfiles_tmux_conf}}"
+    dest: ~/.tmux.conf
+    state: link
+  when: tmux_conf.stat.exists

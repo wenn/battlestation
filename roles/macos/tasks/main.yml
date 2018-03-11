@@ -12,3 +12,4 @@
 - import_tasks: conf.d/git.yml
 - import_tasks: conf.d/vim.yml
 - import_tasks: conf.d/bash.yml
+- import_tasks: conf.d/tmux.yml
