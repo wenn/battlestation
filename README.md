@@ -1,6 +1,8 @@
 # Battlestation
-Setup your develpoment machine with [ansible][ansible].
+Setup a develpoment machine with [ansible][ansible].
 Credit to [Josheph Kahn's blog][josephkahn].
+
+Save a few hours and let [ansible] automate bootstrapping your new development machine. Setup instructions are idempotent and repeatable.
 
 ## Macos
 Setup a macos machine.
@@ -53,9 +55,11 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 
 | Module | How is it managed? |
 | --- | :--- |
-| [git] | A global _.gitconfig_  will be linked to your `dotfiles`' _.gitconfig_ |
-| [vim] | A global _.vimrc_  will be linked to your `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
-| [bash] | Links _.bashrc_ and *.bash\_profile* from your `dotfiles` repo.|
+| [git] | A global _.gitconfig_  will be linked from the `dotfiles`' _.gitconfig_ |
+| [vim] | A global _.vimrc_  will be linked from the `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
+| [bash] | Links _.bashrc_ and *.bash\_profile* from `dotfiles` repo.|
+| [ideavim] | A global _.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
+| [screen] | A global _.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
 
 ---
 
@@ -73,4 +77,5 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 [vim]: https://www.vim.org/
 [iterm2]: https://www.iterm2.com/
 [bash]: https://linux.die.net/man/1/bash
-
+[screen]: https://www.gnu.org/software/screen/
+[ideavim]: https://plugins.jetbrains.com/plugin/164-ideavim
