@@ -26,6 +26,7 @@ Different ways to setup.
 | [vim] | latest | yes |
 | [tmux] | latest | yes |
 | [iterm2] | latest | yes |
+| [shiftit] | latest | yes |
 
 
 #### Disable a module
@@ -79,3 +80,4 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 [bash]: https://linux.die.net/man/1/bash
 [screen]: https://www.gnu.org/software/screen/
 [ideavim]: https://plugins.jetbrains.com/plugin/164-ideavim
+[shiftit]: https://github.com/fikovnik/ShiftIt

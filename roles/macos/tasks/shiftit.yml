@@ -1,0 +1,12 @@
+---
+- name: Is shiftit installed?
+  stat:
+    path: "{{ applications_dir }}/ShiftIt.app"
+  register: shiftit
+
+- block:
+  - name: Install shiftit
+    homebrew_cask:
+      name: shiftit
+      state: present
+  when: not shiftit.stat.exists
