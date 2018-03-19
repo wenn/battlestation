@@ -84,6 +84,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 - add intelliJ
 - add sublime text 2
 - add visual studio
+- separate remote install and local install scripts.
 
 ---
 
