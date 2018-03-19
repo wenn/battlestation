@@ -53,7 +53,7 @@ Configuration files are required to live at the top level of the `dotfiles` proj
 To enable configuration, allow [setup] to know the repo's _https uri_ of the `dotfiles`.
 
 #### What is a dotfiles?
-A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc`.
+A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`.
 
 #### Example
 
@@ -61,7 +61,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bash_rc
 /dotfiles
    .gitconfig
    .bash_profile
-   .bash_rc
+   .bashrc
    .vimrc
 ```
 
