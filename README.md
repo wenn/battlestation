@@ -88,6 +88,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 - postman
 - npm
 - gem
+- sdkman
 
 ---
 
