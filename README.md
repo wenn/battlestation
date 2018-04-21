@@ -81,6 +81,8 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 - add intelliJ
 - add sublime text 2
 - add visual studio
+- add virtualenv
+- add aws cli
 - separate remote install and local install scripts.
 - postman
 - npm
@@ -102,6 +104,7 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 [git]: https://git-scm.com/
 [chrome]: https://www.google.com/chrome/
 [python]: https://www.python.org/
+[pip]: https://pypi.org/project/pip/
 [vim]: https://www.vim.org/
 [iterm2]: https://www.iterm2.com/
 [bash]: https://linux.die.net/man/1/bash
