@@ -1,16 +1,16 @@
 #! /usr/bin/env sh
 
-while test $# -gt 0; do
-  case "$1" in
-    -h|--help)
+while getopts 'rh' flag; do
+  case "${flag}" in
+    h)
       echo "$0 - setup a mac with software."
       echo " "
       echo "options:"
-      echo "-h, --help                the help"
-      echo "--required-only           only installed required modules"
+      echo "-h    the [h]elp"
+      echo "-r    only installed [r]equired modules"
       exit 0
       ;;
-    --required-only)
+    r)
       required_only="true"
       shift
       ;;

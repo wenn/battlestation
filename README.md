@@ -22,7 +22,7 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 1. clone [battlestation]
 2. [modify] your [battlestation]
-3. install required `./setup/macos_run.sh --required-only`
+3. install required `./setup/macos_run.sh -r'
 4. run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
 
 #### Supports
