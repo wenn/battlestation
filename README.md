@@ -10,8 +10,6 @@ Credit to [Josheph Kahn's blog][josephkahn].
 Setup a macos machine.
 
 #### Quick Setup
-Just run this.
-
 `sh <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
 
 *Make sure there are no newlines in your copy, it will affect [ansible] prompts*.
@@ -22,7 +20,7 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 1. clone [battlestation]
 2. [modify] your [battlestation]
-3. install required `./setup/macos_run.sh -r'
+3. install required `./setup/macos_run.sh -r`
 4. run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
 
 #### Supports
@@ -45,8 +43,6 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 #### Enable/Disable a module
 `main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the module.
-
-
 
 ## Configurable modules
 Configuration is managed via a [dotfiles] git repo.
