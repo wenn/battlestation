@@ -12,5 +12,6 @@
     - name: "dotfiles_repo"
       prompt: "[ optional ] What is your dotfiles https git uri"
       private: no
+      default: ""
 
 
