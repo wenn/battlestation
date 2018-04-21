@@ -1,9 +1,24 @@
 #! /usr/bin/env sh
 
-required_only=false
-if [[ $1 == "--required-only" ]]; then
-  required_only=true
-fi
+while test $# -gt 0; do
+  case "$1" in
+    -h|--help)
+      echo "$0 - setup a mac with software."
+      echo " "
+      echo "options:"
+      echo "-h, --help                the help"
+      echo "--required-only           only installed required modules"
+      exit 0
+      ;;
+    --required-only)
+      required_only="true"
+      shift
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
 
 function ensure_brew {
   if brew --version > /dev/null 2>&1; then
@@ -50,7 +65,7 @@ ensure_git
 ensure_python2
 ensure_ansible
 
-if [[ $required_only == "false" ]]; then
+if [[ $required_only != "true" ]]; then
   battlestation_path=/tmp/battlestation
   function ensure_battlestation {
     local battlestation_repo=https://github.com/wenn/battlestation.git
