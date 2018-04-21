@@ -41,6 +41,7 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 | [shiftit] | latest |  | yes |
 | [dropbox] | latest |  | yes |
 | [firefox] | latest |  | yes |
+| [awscli] | latest | yes | yes |
 
 
 #### Enable/Disable a module
@@ -77,18 +78,18 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 
 ## TODO
 
-- add docker
-- add iterm conf
-- add intelliJ
-- add sublime text 2
-- add visual studio
-- add virtualenv
-- add aws cli
+- docker
+- add iterm2 conf
+- intelliJ ?
+- sublime text 2 ?
+- visual studio ?
+- virtualenv ?
 - separate remote install and local install scripts.
 - postman
 - npm
 - gem
 - sdkman
+- vbox
 
 ---
 
@@ -116,3 +117,4 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 [puppet]: https://puppet.com/
 [firefox]: https://www.mozilla.org/en-US/firefox/new/
 [dropbox]: https://www.dropbox.com/
+[awscli]: https://aws.amazon.com/cli/

@@ -27,3 +27,7 @@
 @test "firefox is installed" {
   test -d "/Applications/Firefox.app"
 }
+
+@test "aws cli is installed" {
+  aws --version
+}
