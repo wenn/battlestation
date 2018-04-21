@@ -31,6 +31,7 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 | --- |---:|---:|---:|
 | [homebrew] | latest | yes | yes |
 | [python] | 2.7 | yes | yes |
+| [pip] | latest | yes | yes |
 | [ansible] | 2.4.3.0 | yes | yes |
 | [git] | latest | yes | yes |
 | [chrome] | latest |  | yes |
