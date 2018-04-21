@@ -1,4 +1,6 @@
 language: bash
 os: osx
 sudo: enabled
+install: brew install bats
 script: bash echo -n | ./setup/macos_run.sh
+acfter_script: bats tests/

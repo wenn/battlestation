@@ -42,7 +42,7 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 
 #### Enable/Disable a module
-`main.yml` ( _./roles/macos/tasks/main.yml_ ) instructs all modules, simply comment a task to disable the module.
+Modify _./roles/macos/tasks/main.yml_. Comment a task to disable the module.
 
 ## Configurable modules
 Configuration is managed via a [dotfiles] git repo.
@@ -72,7 +72,6 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 | [ideavim] |  _~/.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
 | [screen] |  _~/.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
 | [tmux] |  _~/.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.|
-
 
 ## TODO
 
