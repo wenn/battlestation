@@ -27,21 +27,22 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 #### Supports
 
-| Module | Version | Required | Enabled |
-| --- |---:|---:|---:|
-| [homebrew] | latest | yes | yes |
-| [python] | 2.7 | yes | yes |
-| [pip] | latest | yes | yes |
-| [ansible] | 2.4.3.0 | yes | yes |
-| [git] | latest | yes | yes |
-| [chrome] | latest |  | yes |
-| [vim] | latest |  | yes |
-| [tmux] | latest |  | yes |
-| [iterm2] | latest |  | yes |
-| [shiftit] | latest |  | yes |
-| [dropbox] | latest |  | yes |
-| [firefox] | latest |  | yes |
-| [awscli] | latest | yes | yes |
+|  Module        |                 Version  |  Required  |  Enabled  |
+|  ---           |---:|---:|---:|
+|  [homebrew]    |                 latest   |  yes       |  yes      |
+|  [python]      |                 2.7      |  yes       |  yes      |
+|  [pip]         |                 latest   |  yes       |  yes      |
+|  [ansible]     |                 2.4.3.0  |  yes       |  yes      |
+|  [git]         |                 latest   |  yes       |  yes      |
+|  [chrome]      |                 latest   |  no        |  yes      |
+|  [vim]         |                 latest   |  no        |  yes      |
+|  [tmux]        |                 latest   |  no        |  yes      |
+|  [iterm2]      |                 latest   |  no        |  yes      |
+|  [shiftit]     |                 latest   |  no        |  yes      |
+|  [dropbox]     |                 latest   |  no        |  yes      |
+|  [firefox]     |                 latest   |  no        |  yes      |
+|  [awscli]      |                 latest   |  no        |  yes      |
+|  [virtualenv]  |                 latest   |  no        |  yes      |
 
 
 #### Enable/Disable a module
@@ -118,3 +119,4 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 [firefox]: https://www.mozilla.org/en-US/firefox/new/
 [dropbox]: https://www.dropbox.com/
 [awscli]: https://aws.amazon.com/cli/
+[virtualenv]: https://virtualenv.pypa.io/en/stable/

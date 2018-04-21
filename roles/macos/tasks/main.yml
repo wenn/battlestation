@@ -12,6 +12,7 @@
 - import_tasks: dropbox.yml
 - import_tasks: firefox.yml
 - import_tasks: awscli.yml
+- import_tasks: virtualenv.yml
 
 - import_tasks: conf.d/git.yml
 - import_tasks: conf.d/vim.yml

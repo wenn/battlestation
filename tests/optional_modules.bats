@@ -31,3 +31,7 @@
 @test "aws cli is installed" {
   aws --version
 }
+
+@test "virtualenv is installed" {
+  virtualenv --version
+}

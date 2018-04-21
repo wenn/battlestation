@@ -1,12 +1,12 @@
 ---
 - block:
-  - name: Install aws cli
+  - name: Install virtualenv
     pip:
-      name: awscli
+      name: virtualenv
       state: latest
 
   tags:
     - cli
-    - aws
     - pip
+    - virtualenv
 
