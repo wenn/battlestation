@@ -1,4 +1,4 @@
 language: bash
 os: osx
 sudo: enabled
-script: bash ./setup/macos_run.sh
+script: bash echo -n | ./setup/macos_run.sh
