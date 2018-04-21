@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wenn/battlestation.svg?branch=master)](https://travis-ci.org/wenn/battlestation)
+
 # Battlestation
 Setting up a new machine? Let [ansible][ansible] do all the work.
 Save hours of finding downloads, managing installations, setting up configurations and trying to remember where things should be.
