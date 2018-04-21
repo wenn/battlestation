@@ -1,0 +1,11 @@
+---
+- block:
+  - name: Install node
+    homebrew:
+      name: node
+      state: latest
+
+  tags:
+    - cli
+    - node
+    - npm

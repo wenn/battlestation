@@ -35,3 +35,11 @@
 @test "virtualenv is installed" {
   virtualenv --version
 }
+
+@test "node is installed" {
+  node --version
+}
+
+@test "npm is installed" {
+  npm --version
+}

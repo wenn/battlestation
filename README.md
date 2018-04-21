@@ -27,23 +27,24 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 
 #### Supports
 
-|  Module        |                 Version  |  Required  |  Enabled  |
-|  ---           |---:|---:|---:|
-|  [homebrew]    |                 latest   |  yes       |  yes      |
-|  [python]      |                 2.7      |  yes       |  yes      |
-|  [pip]         |                 latest   |  yes       |  yes      |
-|  [ansible]     |                 2.4.3.0  |  yes       |  yes      |
-|  [git]         |                 latest   |  yes       |  yes      |
-|  [chrome]      |                 latest   |  no        |  yes      |
-|  [vim]         |                 latest   |  no        |  yes      |
-|  [tmux]        |                 latest   |  no        |  yes      |
-|  [iterm2]      |                 latest   |  no        |  yes      |
-|  [shiftit]     |                 latest   |  no        |  yes      |
-|  [dropbox]     |                 latest   |  no        |  yes      |
-|  [firefox]     |                 latest   |  no        |  yes      |
-|  [awscli]      |                 latest   |  no        |  yes      |
-|  [virtualenv]  |                 latest   |  no        |  yes      |
-
+|  Module          |                 Version    |  Required    |  Enabled    |
+|  ---             |---:                        |---:          |---:         |
+|  [homebrew]      |                 latest     |  yes         |  yes        |
+|  [python]        |                 2.7        |  yes         |  yes        |
+|  [pip]           |                 latest     |  yes         |  yes        |
+|  [ansible]       |                 2.4.3.0    |  yes         |  yes        |
+|  [git]           |                 latest     |  yes         |  yes        |
+|  [chrome]        |                 latest     |  no          |  yes        |
+|  [vim]           |                 latest     |  no          |  yes        |
+|  [tmux]          |                 latest     |  no          |  yes        |
+|  [iterm2]        |                 latest     |  no          |  yes        |
+|  [shiftit]       |                 latest     |  no          |  yes        |
+|  [dropbox]       |                 latest     |  no          |  yes        |
+|  [firefox]       |                 latest     |  no          |  yes        |
+|  [awscli]        |                 latest     |  no          |  yes        |
+|  [virtualenv]    |                 latest     |  no          |  yes        |
+|  [node]          |                 latest     |  no          |  yes        |
+|  [npm]           |                 latest     |  no          |  yes        |
 
 #### Enable/Disable a module
 Modify _./roles/macos/tasks/main.yml_. Comment a task to disable the module.
@@ -68,14 +69,14 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 
 #### Supports
 
-| Module | How is it managed? |
-| --- | :--- |
-| [git] |  _~/.gitconfig_  will be linked from the `dotfiles`' _.gitconfig_ |
-| [vim] |  _~/.vimrc_  will be linked from the `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.|
-| [bash] | Links _~/.bashrc_ and *~/.bash\_profile* from `dotfiles` repo.|
-| [ideavim] |  _~/.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.|
-| [screen] |  _~/.screenrc_  will be linked from the `dotfiles`' _.screenrc_.|
-| [tmux] |  _~/.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.|
+| Module      | How is it managed?                                                                                                               |
+| ---         | :---                                                                                                                             |
+| [git]       |  _~/.gitconfig_  will be linked from the `dotfiles`' _.gitconfig_                                                                |
+| [vim]       |  _~/.vimrc_  will be linked from the `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.  |
+| [bash]      | Links _~/.bashrc_ and *~/.bash\_profile* from `dotfiles` repo.                                                                   |
+| [ideavim]   |  _~/.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.                                                               |
+| [screen]    |  _~/.screenrc_  will be linked from the `dotfiles`' _.screenrc_.                                                                 |
+| [tmux]      |  _~/.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.                                                               |
 
 ## TODO
 
@@ -84,10 +85,8 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 - intelliJ ?
 - sublime text 2 ?
 - visual studio ?
-- virtualenv ?
 - separate remote install and local install scripts.
 - postman
-- npm
 - gem
 - sdkman
 - vbox
@@ -120,3 +119,5 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 [dropbox]: https://www.dropbox.com/
 [awscli]: https://aws.amazon.com/cli/
 [virtualenv]: https://virtualenv.pypa.io/en/stable/
+[npm]: https://www.npmjs.com/
+[node]: https://nodejs.org/en/

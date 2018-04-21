@@ -1,6 +1,11 @@
 ---
-- name: Install vim
-  homebrew:
-    options: -with-override-system-vi
-    name: vim
-    state: latest
+- block:
+  - name: Install vim
+    homebrew:
+      options: -with-override-system-vi
+      name: vim
+      state: latest
+
+  tags:
+    - cli
+    - vim
