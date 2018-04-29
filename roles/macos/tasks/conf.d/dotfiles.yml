@@ -1,0 +1,18 @@
+---
+- block:
+  - name: Have a dotfiles?
+    stat:
+      path: "{{ dotfiles_dir }}/.{{ item }}"
+    register: dotfiles
+    loop: "{{ managed_dotfiles }}"
+
+  - name: Link dotfiles
+    file:
+      src: "{{ dotfiles_dir }}/.{{ item.item }}"
+      dest: "~/.{{ item.item }}"
+      state: link
+    when: item.stat.exists
+    loop: "{{ dotfiles.results }}"
+
+  tags:
+    - dotfiles

@@ -46,36 +46,22 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 |  [npm]             |                 latest       |  no            |  yes          |
 
 #### Enable/Disable a module
-Modify _./roles/macos/tasks/main.yml_. Comment a task to disable the module.
+Modify [_./roles/macos/tasks/main.yml_]. Comment a task to disable the module.
 
-## Configurable modules
-Configuration is managed via a [dotfiles] git repo.
-Configuration files are required to live at the top level of the `dotfiles` project.
-To enable configuration, allow [setup] to know the repo's _https uri_ of the `dotfiles`.
-
+## Dotfiles
 #### What is a dotfiles?
 A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`.
+For inspiration, take a look at [mathias's collective dotfiles](https://github.com/mathiasbynens/dotfiles).
 
-#### Example
-
-```
-/dotfiles
-   .gitconfig
-   .bash_profile
-   .bashrc
-   .vimrc
-```
+#### How to enable?
+To use your personal _dotfiles_, allow [setup] to know the repo's _https uri_ of the `dotfiles`. The [setup] will provide a prompt for you to enter the location of your _dotfiles_ directory.
 
 #### Supports
+You can view a list of supported dotfiles here [_./roles/macos/vars/main.yml_].
+If a dotfile does not exists in your personal dotfiles dir, it will be a no-op.
+Furthermore, you can comment on items in `managed_dotfiles` to ignore
+the default behavior.
 
-| Module      | How is it managed?                                                                                                               |
-| ---         | :---                                                                                                                             |
-| [git]       |  _~/.gitconfig_  will be linked from the `dotfiles`' _.gitconfig_                                                                |
-| [vim]       |  _~/.vimrc_  will be linked from the `dotfiles`' _.vimrc_. Will install [vundle] managed vim plugins if it is used in _.vimrc_.  |
-| [bash]      | Links _~/.bashrc_ and *~/.bash\_profile* from `dotfiles` repo.                                                                   |
-| [ideavim]   |  _~/.ideavimrc_  will be linked from the `dotfiles`' _.ideavimrc_.                                                               |
-| [screen]    |  _~/.screenrc_  will be linked from the `dotfiles`' _.screenrc_.                                                                 |
-| [tmux]      |  _~/.tmux.conf_  will be linked from the `dotfiles`' _.tmux.conf_.                                                               |
 
 ## TODO
 
@@ -120,3 +106,5 @@ A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`
 [virtualenv]: https://virtualenv.pypa.io/en/stable/
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org/en/
+[_./roles/macos/tasks/main.yml_]: https://github.com/wenn/battlestation/tree/master/roles/macos/tasks/main.yml
+[_./roles/macos/vars/main.yml_]: https://github.com/wenn/battlestation/tree/master/roles/macos/vars/main.yml

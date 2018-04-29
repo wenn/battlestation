@@ -2,8 +2,9 @@
 # [ Required ]
 - import_tasks: dotfiles.yml
 
-# [ Optional ]
-# Comment tasks to disable.
+# [ Optional ] Comment tasks to disable.
+- import_tasks: conf.d/dotfiles.yml
+
 - import_tasks: chrome.yml
 - import_tasks: vim.yml
 - import_tasks: tmux.yml
@@ -14,10 +15,3 @@
 - import_tasks: awscli.yml
 - import_tasks: virtualenv.yml
 - import_tasks: node.yml
-
-- import_tasks: conf.d/git.yml
-- import_tasks: conf.d/vim.yml
-- import_tasks: conf.d/bash.yml
-- import_tasks: conf.d/tmux.yml
-- import_tasks: conf.d/ideavim.yml
-- import_tasks: conf.d/screen.yml
