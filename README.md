@@ -26,25 +26,24 @@ Allows you to disable/enable certain modules before running the [ansible] playbo
 4. run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
 
 #### Supports
-
-|  Module          |                 Version    |  Required    |  Enabled    |
-|  ---             |---:                        |---:          |---:         |
-|  [homebrew]      |                 latest     |  yes         |  yes        |
-|  [python]        |                 2.7        |  yes         |  yes        |
-|  [pip]           |                 latest     |  yes         |  yes        |
-|  [ansible]       |                 2.4.3.0    |  yes         |  yes        |
-|  [git]           |                 latest     |  yes         |  yes        |
-|  [chrome]        |                 latest     |  no          |  yes        |
-|  [vim]           |                 latest     |  no          |  yes        |
-|  [tmux]          |                 latest     |  no          |  yes        |
-|  [iterm2]        |                 latest     |  no          |  yes        |
-|  [shiftit]       |                 latest     |  no          |  yes        |
-|  [dropbox]       |                 latest     |  no          |  yes        |
-|  [firefox]       |                 latest     |  no          |  yes        |
-|  [awscli]        |                 latest     |  no          |  yes        |
-|  [virtualenv]    |                 latest     |  no          |  yes        |
-|  [node]          |                 latest     |  no          |  yes        |
-|  [npm]           |                 latest     |  no          |  yes        |
+|  Module            |                 Version      |  Required      |  Enabled      |
+|  ---               |---:                          |---:            |---:           |
+|  [homebrew]        |                 latest       |  yes           |  yes          |
+|  [python]          |                 2.7          |  yes           |  yes          |
+|  [pip]             |                 latest       |  yes           |  yes          |
+|  [ansible]         |                 2.5          |  yes           |  yes          |
+|  [git]             |                 latest       |  yes           |  yes          |
+|  [chrome]          |                 latest       |  no            |  yes          |
+|  [vim]             |                 latest       |  no            |  yes          |
+|  [tmux]            |                 latest       |  no            |  yes          |
+|  [iterm2]          |                 latest       |  no            |  yes          |
+|  [shiftit]         |                 latest       |  no            |  yes          |
+|  [dropbox]         |                 latest       |  no            |  yes          |
+|  [firefox]         |                 latest       |  no            |  yes          |
+|  [awscli]          |                 latest       |  no            |  yes          |
+|  [virtualenv]      |                 latest       |  no            |  yes          |
+|  [node]            |                 latest       |  no            |  yes          |
+|  [npm]             |                 latest       |  no            |  yes          |
 
 #### Enable/Disable a module
 Modify _./roles/macos/tasks/main.yml_. Comment a task to disable the module.

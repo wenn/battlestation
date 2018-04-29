@@ -23,17 +23,19 @@ done
 function ensure_brew {
   if brew --version > /dev/null 2>&1; then
     echo ">> brew already installed @ version $(brew --version)."
-  else
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    return 0
   fi
+
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 function ensure_git {
   if git --version > /dev/null 2>&1; then
     echo ">> git already installed @ version $(git --version) "
-  else
-    brew install git && brew link git
+    return 0
   fi
+
+  brew install git && brew link git
 }
 
 function ensure_python2 {
@@ -41,23 +43,29 @@ function ensure_python2 {
 
   if brew list python@$version > /dev/null 2>&1; then
     echo ">> python@$version already installed."
-  else
-    brew install python@$version \
-      && brew unlink python@$version \
-      && brew link python@$version
+    return 0
   fi
+
+  brew install python@$version \
+    && brew unlink python@$version \
+    && brew link python@$version
 }
 
 function ensure_ansible {
-  local ansible_version=2.4.3.0
+  local ansible_version=2.5
   local python_version="2.7"
   local pip_bin="pip$python_version"
 
   if ansible --version > /dev/null 2>&1; then
-    echo ">> ansible==$ansible_version already installed"
-  else
-    $pip_bin install ansible==$ansible_version
+    local current_version=$(ansible --version | head -n 1 | awk -F' ' '{print $2}')
+
+    if [[ $current_version == $ansible_version ]]; then
+      echo ">> ansible==$ansible_version already installed"
+      return 0
+    fi
   fi
+
+  $pip_bin install ansible==$ansible_version
 }
 
 ensure_brew
