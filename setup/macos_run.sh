@@ -47,8 +47,8 @@ function ensure_python2 {
   fi
 
   brew install python@$version \
-    && brew unlink python@$version \
-    && brew link python@$version
+    && brew unlink python \
+    && brew link --overwrite python@$version
 }
 
 function ensure_ansible {
