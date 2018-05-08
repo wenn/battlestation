@@ -13,3 +13,7 @@ managed_dotfiles:
   - osx
   - gitignore
   - gitconfig
+
+brew_packages:
+  - node
+  - tmux
