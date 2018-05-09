@@ -74,12 +74,18 @@ ensure_python2
 ensure_ansible
 
 if [[ $required_only != "true" ]]; then
-  battlestation_path=/tmp/battlestation
+  battlestation_path=/tmp/
   function ensure_battlestation {
-    local battlestation_repo=https://github.com/wenn/battlestation.git
+    local bsm=battlestation-master
 
-    rm -rf $battlestation_path
-    git clone $battlestation_repo $battlestation_path
+    cd /tmp
+    rm -rf /tmp/$bsm
+
+    curl \
+      -sSL https://github.com/wenn/battlestation/archive/master.zip \
+      -o ${bsm}.zip \
+      && unzip $bsm \
+      && cd $bsm
   }
 
   function run_playbook {

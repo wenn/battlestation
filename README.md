@@ -20,10 +20,10 @@ Quick setup will install [battlestation] to */tmp*, and uses the default install
 #### Custom Setup
 Allows you to disable/enable certain modules before running the [ansible] playbook.
 
-1. clone [battlestation]
+1. Get [battlestation] without git. `BSM=battlestation-master && curl -sSL https://github.com/wenn/battlestation/archive/master.zip -o ${BSM}.zip && unzip $BSM && cd $BSM`
 2. [modify] your [battlestation]
-3. install required `./setup/macos_run.sh -r`
-4. run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
+3. Install required modules `./setup/macos_run.sh -r`
+4. Run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
 
 #### Supports
 |  Module            |                 Version      |  Required      |  Enabled      |
