@@ -55,12 +55,12 @@ BSM=battlestation-master && curl -sSL https://github.com/wenn/battlestation/arch
 Modify [_./roles/macos/tasks/main.yml_]. Comment a task to disable the module.
 
 ## Dotfiles
-#### What is a dotfiles?
+#### What is a dotfile?
 A personal repo to store your "dot" configurations, like a `.vimrc` or `.bashrc`.
 For inspiration, take a look at [mathias's collective dotfiles](https://github.com/mathiasbynens/dotfiles).
 
 #### How to enable?
-To use your personal _dotfiles_, allow [setup] to know the repo's _https uri_ of the `dotfiles`. The [setup] will provide a prompt for you to enter the location of your _dotfiles_ directory.
+To use your personal _dotfiles_, allow [setup] to know your dotfiles repository's _https uri_ of the `dotfiles`. The [setup] will provide a prompt for you to enter the location of your _dotfiles_ directory.
 
 #### Supports
 You can view a list of supported dotfiles here [_./roles/macos/vars/main.yml_].
