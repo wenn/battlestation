@@ -12,18 +12,24 @@ Credit to [Josheph Kahn's blog][josephkahn].
 Setup a macos machine.
 
 #### Quick Setup
-`sh <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)`
+Quick setup will install [battlestation] to */tmp*,
+and uses the default installations and configurations.
 
-*Make sure there are no newlines in your copy, it will affect [ansible] prompts*.
-Quick setup will install [battlestation] to */tmp*, and uses the default installations and configurations.
+```sh
+sh <(curl -H 'Cache-Control: no-cache' -ssSL https://raw.githubusercontent.com/wenn/battlestation/master/setup/macos_run.sh)
+```
 
 #### Custom Setup
 Allows you to disable/enable certain modules before running the [ansible] playbook.
 
-1. Get [battlestation] without git. `BSM=battlestation-master && curl -sSL https://github.com/wenn/battlestation/archive/master.zip -o ${BSM}.zip && unzip $BSM && cd $BSM`
+1. Get [battlestation] without git.
+```sh
+BSM=battlestation-master && curl -sSL https://github.com/wenn/battlestation/archive/master.zip -o ${BSM}.zip && unzip $BSM && cd $BSM
+```
 2. [modify] your [battlestation]
 3. Install required modules `./setup/macos_run.sh -r`
-4. Run the playbook `ansible-playbook -i HOSTS setup.yml` from [battlestation]
+4. From [battlestation], run the playbook `ansible-playbook -i HOSTS setup.yml`
+
 
 #### Supports
 |  Module            |                 Version      |  Required      |  Enabled      |
