@@ -3,4 +3,4 @@
   homebrew:
     name: "{{ item }}"
     state: latest
-    loop: "{{ brew_packages }}"
+  loop: "{{ brew_packages }}"

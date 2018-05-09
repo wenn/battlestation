@@ -12,6 +12,4 @@
 - import_tasks: firefox.yml
 - import_tasks: awscli.yml
 - import_tasks: virtualenv.yml
-
-# [ Optional ] Comment tasks to disable.
-- import_tasks: brew_packages.yml
+- import_tasks: brew_modules.yml
