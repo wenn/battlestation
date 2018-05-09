@@ -74,18 +74,20 @@ ensure_python2
 ensure_ansible
 
 if [[ $required_only != "true" ]]; then
-  battlestation_path=/tmp/
+  bsm="battlestation-master"
+  battlestation_path=/tmp/$bsm
+
   function ensure_battlestation {
-    local bsm=battlestation-master
+    # clean up battlestation directory from previous runs.
+    rm -rf $battlestation_path
 
+    # ensure battlestation project exists.
     cd /tmp
-    rm -rf /tmp/$bsm
-
     curl \
       -sSL https://github.com/wenn/battlestation/archive/master.zip \
-      -o ${bsm}.zip \
-      && unzip $bsm \
-      && cd $bsm
+      -o ${bsm}.zip
+    unzip $bsm
+    cd $bsm
   }
 
   function run_playbook {
