@@ -17,3 +17,12 @@ managed_dotfiles:
 brew_packages:
   - node
   - tmux
+  - tree
+  - grep
+
+brew_casks:
+  - google-chrome
+  - dropbox
+  - firefox
+  - iterm2
+  - shiftit

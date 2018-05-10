@@ -1,0 +1,10 @@
+---
+- block:
+  - name: Install brew casks ( some cask requires password )
+    homebrew_cask:
+      name: "{{ item }}"
+      state: present
+      install_options: force
+    loop: "{{ brew_casks }}"
+    ignore_errors: True
+    register: casks
