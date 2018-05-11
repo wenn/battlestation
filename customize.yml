@@ -26,7 +26,12 @@ brew_casks:
   - firefox
   - iterm2
   - shiftit
-  - intellij-idea-ce
+
+  # Uncomment to enable cask
+  # - intellij-idea-ce
+  # - visual-studio-code
+  # - sublime-text
+  # - atom
 
 installs:
   - vim

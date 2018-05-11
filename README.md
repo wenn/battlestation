@@ -32,27 +32,30 @@ BSM=battlestation-master && curl -sSL https://github.com/wenn/battlestation/arch
 
 
 #### Supports
-|  Module                           |                 Version        |  Required        |  Enabled        |
-|  ---                              |---:                            |---:              |---:             |
-|  [homebrew]                       |                 latest         |  yes             |  yes            |
-|  [python]                         |                 2.7            |  yes             |  yes            |
-|  [pip]                            |                 latest         |  yes             |  yes            |
-|  [ansible]                        |                 2.5            |  yes             |  yes            |
-|  [git]                            |                 latest         |  yes             |  yes            |
-|  [chrome]                         |                 latest         |  no              |  yes            |
-|  [vim]                            |                 latest         |  no              |  yes            |
-|  [tmux]                           |                 latest         |  no              |  yes            |
-|  [iterm2]                         |                 latest         |  no              |  yes            |
-|  [shiftit]                        |                 latest         |  no              |  yes            |
-|  [dropbox]                        |                 latest         |  no              |  yes            |
-|  [firefox]                        |                 latest         |  no              |  yes            |
-|  [awscli]                         |                 latest         |  no              |  yes            |
-|  [virtualenv]                     |                 latest         |  no              |  yes            |
-|  [node]                           |                 latest         |  no              |  yes            |
-|  [npm]                            |                 latest         |  no              |  yes            |
-|  [virtualbox]                     |                 latest         |  no              |  yes            |
-|  [vagrant]                        |                 latest         |  no              |  yes            |
-|  [intellij-idea-ce]               |                 latest         |  no              |  yes            |
+|  Module                               |                 Version          |  Required          |  Enabled          |
+|  ---                                  |---:                              |---:                |---:               |
+|  [homebrew]                           |                 latest           |  yes               |  yes              |
+|  [python]                             |                 2.7              |  yes               |  yes              |
+|  [pip]                                |                 latest           |  yes               |  yes              |
+|  [ansible]                            |                 2.5              |  yes               |  yes              |
+|  [git]                                |                 latest           |  yes               |  yes              |
+|  [chrome]                             |                 latest           |  no                |  yes              |
+|  [vim]                                |                 latest           |  no                |  yes              |
+|  [tmux]                               |                 latest           |  no                |  yes              |
+|  [iterm2]                             |                 latest           |  no                |  yes              |
+|  [shiftit]                            |                 latest           |  no                |  yes              |
+|  [dropbox]                            |                 latest           |  no                |  yes              |
+|  [firefox]                            |                 latest           |  no                |  yes              |
+|  [awscli]                             |                 latest           |  no                |  yes              |
+|  [virtualenv]                         |                 latest           |  no                |  yes              |
+|  [node]                               |                 latest           |  no                |  yes              |
+|  [npm]                                |                 latest           |  no                |  yes              |
+|  [virtualbox]                         |                 latest           |  no                |  yes              |
+|  [vagrant]                            |                 latest           |  no                |  yes              |
+|  [intellij-idea-ce]                   |                 latest           |  no                |  no               |
+|  [visual-studio-code]                 |                 latest           |  no                |  no               |
+|  [atom]                               |                 latest           |  no                |  no               |
+|  [sublime-text]                       |                 latest           |  no                |  no               |
 
 #### Enable/Disable a module
 Modify the file [_customize.yml_]. Comment to disable install.
@@ -120,3 +123,6 @@ the default behavior.
 [virtualbox]: https://www.virtualbox.org/
 [vagrant]: https://www.vagrantup.com/
 [intellij-idea-ce]: https://www.jetbrains.com/idea/
+[visual-studio-code]: https://code.visualstudio.com/
+[sublime-text]: https://www.sublimetext.com/
+[atom]: https://atom.io/
