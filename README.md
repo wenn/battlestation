@@ -6,6 +6,8 @@ Save hours of finding downloads, managing installations, setting up configuratio
 
 With [ansible] we're able to set up a new machine automatically, it can take only minutes to get your machine ready. [Ansible][ansible] commands are repeatable in an idempotent manner, meaning, it can be ran again to correct issues without having to run previously successful commands.
 
+If [battlestation] is managing your applications and cli, then it can also keep them up to date. Running the playbook or the [quick setup] will upgrade all applications and cli commands that [battlestation] supports.
+
 Credit to [Josheph Kahn's blog][josephkahn].
 
 ## MacOS
@@ -126,3 +128,4 @@ the default behavior.
 [visual-studio-code]: https://code.visualstudio.com/
 [sublime-text]: https://www.sublimetext.com/
 [atom]: https://atom.io/
+[quick setup]: https://github.com/wenn/battlestation#quick-setup
