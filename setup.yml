@@ -2,6 +2,8 @@
 - name: Let's get your machine ready!
   hosts: local
   connection: local
+  vars_files:
+    - customize.yml
   roles:
     - macos
   vars_prompt:

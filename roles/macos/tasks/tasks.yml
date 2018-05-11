@@ -1,0 +1,8 @@
+---
+# Install with ansible custom task
+- name: Install tasks
+  include_tasks: "{{ item }}.yml"
+  loop: "{{ installs }}"
+
+
+

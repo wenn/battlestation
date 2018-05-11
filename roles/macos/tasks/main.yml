@@ -3,11 +3,9 @@
 - import_tasks: dotfiles.yml
 
 # [ Optional ] Comment tasks to disable.
+- import_tasks: tasks.yml
+- import_tasks: conf.d/dotfiles.yml
 - import_tasks: brew_casks.yml
 - import_tasks: brew_modules.yml
-- import_tasks: conf.d/dotfiles.yml
-- import_tasks: vim.yml
-- import_tasks: awscli.yml
-- import_tasks: virtualenv.yml
 - import_tasks: done.yml
 

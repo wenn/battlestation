@@ -52,7 +52,7 @@ BSM=battlestation-master && curl -sSL https://github.com/wenn/battlestation/arch
 |  [npm]             |                 latest       |  no            |  yes          |
 
 #### Enable/Disable a module
-Modify [_./roles/macos/tasks/main.yml_]. Comment a task to disable the module.
+Modify the file [_customize.yml_]. Comment to disable install.
 
 ## Dotfiles
 #### What is a dotfile?
@@ -113,4 +113,4 @@ the default behavior.
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org/en/
 [_./roles/macos/tasks/main.yml_]: https://github.com/wenn/battlestation/tree/master/roles/macos/tasks/main.yml
-[_./roles/macos/vars/main.yml_]: https://github.com/wenn/battlestation/tree/master/roles/macos/vars/main.yml
+[_customize.yml_]: https://github.com/wenn/battlestation/tree/master/customize.yml
