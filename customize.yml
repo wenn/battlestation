@@ -19,11 +19,14 @@ brew_packages:
   - grep
 
 brew_casks:
+  - virtualbox
+  - vagrant # depedent on virtualbox
   - google-chrome
   - dropbox
   - firefox
   - iterm2
   - shiftit
+  - intellij-idea-ce
 
 installs:
   - vim

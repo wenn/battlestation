@@ -4,9 +4,3 @@
     pip:
       name: awscli
       state: latest
-
-  tags:
-    - cli
-    - aws
-    - pip
-
