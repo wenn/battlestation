@@ -81,10 +81,7 @@ the default behavior.
 
 - docker
 - add iterm2 conf
-- intelliJ ?
-- sublime text 2 ?
-- visual studio ?
-- separate remote install and local install scripts.
+- intelliJ conf
 - postman
 - gem
 - sdkman
