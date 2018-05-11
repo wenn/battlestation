@@ -69,7 +69,7 @@ For inspiration, take a look at [mathias's collective dotfiles](https://github.c
 To use your personal _dotfiles_, allow [setup] to know your dotfiles repository's _https uri_ of the `dotfiles`. The [setup] will provide a prompt for you to enter the location of your _dotfiles_ directory.
 
 #### Supports
-You can view a list of supported dotfiles here [_customize.yml_].
+You can view the list of supported dotfiles in [_customize.yml_].
 If a dotfile does not exists in your personal dotfiles dir, it will be a no-op.
 Furthermore, you can comment on items in `managed_dotfiles` to ignore
 the default behavior.
