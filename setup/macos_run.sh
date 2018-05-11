@@ -38,11 +38,13 @@ function ensure_git {
   brew install git && brew link git
 }
 
-function ensure_python2 {
-  local version="2"
+function ensure_python3 {
+  local version="3"
 
   if brew list python@$version > /dev/null 2>&1; then
     echo ">> python@$version already installed."
+    brew unlink python
+    brew link --overwrite python@$version
     return 0
   fi
 
@@ -53,7 +55,7 @@ function ensure_python2 {
 
 function ensure_ansible {
   local ansible_version=2.5
-  local python_version="2.7"
+  local python_version="3"
   local pip_bin="pip$python_version"
 
   if ansible --version > /dev/null 2>&1; then
@@ -70,7 +72,7 @@ function ensure_ansible {
 
 ensure_brew
 ensure_git
-ensure_python2
+ensure_python3
 ensure_ansible
 
 if [[ $required_only != "true" ]]; then
