@@ -20,7 +20,7 @@ brew_packages:
 
 brew_casks:
   - virtualbox
-  - vagrant # depedent on virtualbox
+  - vagrant # dependent on virtualbox
   - google-chrome
   - dropbox
   - firefox
