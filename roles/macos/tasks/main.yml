@@ -9,3 +9,5 @@
 - import_tasks: vim.yml
 - import_tasks: awscli.yml
 - import_tasks: virtualenv.yml
+- import_tasks: done.yml
+
