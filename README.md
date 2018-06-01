@@ -86,6 +86,7 @@ the default behavior.
 - gem
 - sdkman
 - vbox
+- coreutils ( brew )
 
 ---
 
